@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* global rules */
+
+body{
+    background-color: black;
+}
+
+.full-wrapper{
+    height: 100vh;
+    background-image: url(../imgs/lambor.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10% 10%;
+    position: relative;
+}
+
+
+header{
+    position: relative;
+    padding: 1.5em;
+    /* z-index: 1; */
+}
+
+div.filter{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.678);
+}
+
+.wrapper{
+    width: 70%;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+header .wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* header rules */
+.brand-logo{
+    float: left;
+}
+
+.brand-logo p{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+
+nav{
+    float: right;
+}
+
+
+ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+ul li{
+    float: left;
+    list-style: none;
+    letter-spacing: 0.2em;
+}
+
+ul a{
+    font-weight: 200;
+    text-decoration: none;
+    color: white;
+    padding: 1.3em;
+    font-size: 1.3em;
+}
+
+/* end of the header part  */
+
+
+/* showcase part  */
+
+.showcase{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.showcase .showcase-content{
+    text-align: center;
+    margin-top: 15em;
+}
+
+.showcase .showcase-content h1{
+    font-size: 3.5em;
+    font-weight: bolder;
+    letter-spacing:0.1em;
+    margin-bottom: 0.5em;
+}
+
+
+.showcase .showcase-content p{
+    font-size: 1.5em;
+    font-weight: 100;
+    color: #e415118a;
+    line-height: 1.7em;
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-bottom: 2.5em;
+}
+
+.showcase .showcase-content a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    letter-spacing: 1em;
+    padding: 1em 3em;
+    border-radius: 50px;
+    color: #e415118a;
+    border: 1px solid white;
+    background-color: black;
+}
+
+/* end of the about part */
+
+.about-me{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20%;
+}
+
+.profile{
+    text-align: center;
+    width: 40%;
+    height: 100%;
+    float: left;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+}
+.profile p{
+    margin-top: 12%;
+    font-weight: 100;
+    font-size: 1.1em;
+    
+}
+.item-container{
+    text-align: center;
+    width: 60%;
+    display: inline-block;
+    height: 100%;
+    overflow: hidden;
+    background-color:#000000;
+}
+
+.item{
+    position: relative;
+    width: 27%;
+    height: 100%;
+    margin-right: 0.8em;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.041);
+    padding: 0.5em;
+}
+
+
+
+.item h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    color:  #e41511e1;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.5em;
+    margin-top: 1.3em;
+}
+
+.item p{
+    text-align: justify;
+    font-weight: 200;
+    padding: 1em;
+    color: rgba(255, 255, 255, 0.253);
+}
